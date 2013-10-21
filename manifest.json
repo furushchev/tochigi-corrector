@@ -1,0 +1,15 @@
+{
+	"name": "Tochigi Political Corrector",
+	"version": "1.0",
+	"description": "For everyone who want to speak in world's great language Tochigi-ben.",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery.min.js", "tochigi.js"]
+		}
+	]
+}
